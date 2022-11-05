@@ -24,6 +24,35 @@
       "mux": {
         "enabled": true
       }
+    },
+    {
+      "listen": "0.0.0.0",
+      "port": 82,
+      "protocol": "http",
+      "settings": {}
+    },
+    {
+      "port": 16823,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "e9d35d5a-c737-4e0f-8ac7-77d5b57851a6",
+            "alterId": 4
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "mkcp",
+        "kcpSettings": {
+          "uplinkCapacity": 5000,
+          "downlinkCapacity": 1000000,
+          "congestion": true,
+          "header": {
+            "type": "none"
+          }
+        }
+      }
     }
   ],
   "outbounds": [
@@ -38,7 +67,7 @@
   ],
   "dns": {
     "servers": [
-      "8.8.8.8",
+      "1.1.1.1",
       "8.8.4.4",
       "localhost"
     ]
